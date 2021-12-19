@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button{
+    -fx-background-color : #DCE1E3 ;
+    -fx-text-fill : #591c0b ;
+    -fx-border-color :  #123456 ;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banksoftware.Controller.SignInController">
+    <stylesheets>
+        <URL value="@../Styles/signin.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="pinStr" layoutX="135.0" layoutY="94.0" onKeyPressed="#pinChange" prefHeight="32.0" prefWidth="351.0" />
+      <TextField fx:id="nameStr" layoutX="135.0" layoutY="152.0" onKeyPressed="#nameChange" prefHeight="32.0" prefWidth="351.0" />
+      <TextField fx:id="emailStr" layoutX="135.0" layoutY="215.0" onKeyPressed="#emailChange" prefHeight="32.0" prefWidth="351.0" />
+      <Button fx:id="signIn" layoutX="235.0" layoutY="310.0" mnemonicParsing="false" onAction="#signUp" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: blue;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="491.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBack" prefHeight="32.0" prefWidth="95.0" style="-fx-background-color: blue;" text="go to back" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="94.0" prefHeight="32.0" prefWidth="66.0" text="Pin">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.33618420362472534" blue="0.9605262875556946" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.16532650589942932" green="0.016812864691019058" blue="0.9078947305679321" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="33.0" layoutY="152.0" prefHeight="32.0" prefWidth="66.0" text="Name" textFill="#5c05ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="33.0" layoutY="215.0" prefHeight="32.0" prefWidth="66.0" text="Email" textFill="#5c05ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="checkPin" layoutX="135.0" layoutY="126.0" prefHeight="17.0" prefWidth="203.0" textFill="RED" visible="false" />
+      <Label fx:id="checkName" layoutX="135.0" layoutY="184.0" prefHeight="17.0" prefWidth="203.0" text="Label" textFill="RED" visible="false" />
+      <Label fx:id="checkEmail" layoutX="135.0" layoutY="247.0" prefHeight="17.0" prefWidth="203.0" text="Label" textFill="RED" visible="false" />
+
+   </children>
+</AnchorPane>

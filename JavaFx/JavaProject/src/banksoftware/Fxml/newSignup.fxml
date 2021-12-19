@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane layoutX="23.0" layoutY="34.0" prefHeight="519.0" prefWidth="606.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banksoftware.Controller.SignInController">
+    <children>
+        <AnchorPane layoutX="327.0" layoutY="47.0" maxWidth="294.0" prefHeight="412.0" prefWidth="292.0" style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="327.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="47.0">
+            <children>
+                <Label layoutX="56.0" layoutY="37.0" prefHeight="25.0" prefWidth="90.0" text="Sign up" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="146.0" AnchorPane.topAnchor="37.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="pinStr" layoutX="56.0" layoutY="108.0" onKeyPressed="#pinChange" prefHeight="40.0" prefWidth="217.0" promptText="PIN" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0 0 2 0;" AnchorPane.rightAnchor="19.0" />
+                <TextField fx:id="nameStr" layoutX="56.0" layoutY="178.0" onKeyPressed="#nameChange" prefHeight="40.0" prefWidth="217.0" promptText="Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0 0 2 0;" AnchorPane.rightAnchor="19.0" />
+                <TextField fx:id="emailStr" layoutX="56.0" layoutY="254.0" onKeyPressed="#emailChange" prefHeight="40.0" prefWidth="217.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0 0 2 0;" AnchorPane.rightAnchor="19.0" />
+                <Button fx:id="btnSignIn" layoutX="56.0" layoutY="336.0" onAction="#signUp" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Sign In" />
+                <Label fx:id="checkPin" layoutX="56.0" layoutY="148.0" prefHeight="17.0" prefWidth="263.0" textFill="RED" visible="false" />
+                <Label fx:id="checkName" layoutX="56.0" layoutY="218.0" prefHeight="17.0" prefWidth="263.0" text="Label" textFill="RED" visible="false" />
+                <Label fx:id="checkEmail" layoutX="56.0" layoutY="294.0" prefHeight="17.0" prefWidth="244.0" text="Label" textFill="RED" visible="false" />
+                <Button fx:id="back" layoutX="210.0" layoutY="336.0" onAction="#backButton" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Back" />
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="33.0" prefHeight="440.0" prefWidth="340.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="33.0">
+            <children>
+                <VBox alignment="CENTER_LEFT" layoutX="76.0" layoutY="84.0" prefHeight="228.0" prefWidth="236.0" style="-fx-background-radius: 1em;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label text="#1" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label text="ATM-Machine" textFill="WHITE">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Label text="Free area to write :)" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+    </children>
+</AnchorPane>

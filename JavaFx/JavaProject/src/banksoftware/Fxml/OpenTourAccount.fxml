@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banksoftware.Controller.OpenTourAccountController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="166.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addingtransactions" prefHeight="47.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-color: black;                      -fx-border-width: 0.0 0.0 5.0 0.0;" text="Add transaction" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#showTransaction" prefHeight="44.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-color: black; -fx-border-width: 0.0 0.0 5.0 0.0;" text="Show transactions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteTransaction" prefHeight="46.0" prefWidth="164.0" style="-fx-background-color: blue; -fx-border-color: black; -fx-border-width: 0.0 0.0 5.0 0.0;" text="Delete transaction" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteAllTransactions" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-color: black; -fx-border-width: 0.0 0.0 5.0 0.0;" text="Delete all transactions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#sendEmail" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-color: black; -fx-border-width: 0.0 0.0 5.0 0.0;" text="send my transaction" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#sendToAnotherAccount" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-color: black; -fx-border-width: 0.0 0.0 5.0 0.0;" text="send to another account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#withdrawLoan" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-color: black; -fx-border-width: 0.0 0.0 5.0 0.0;" text="withdraw loan" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="balance" mnemonicParsing="false" onAction="#cancel" prefHeight="44.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-color: black; -fx-border-width: 0.0 0.0 5.0 0.0;" text="Balance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exit" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-color: black; -fx-border-width: 0.0 0.0 5.0 0.0;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="118.0" prefWidth="481.0" text="Welcome to Your Account and I hope  &#10;to feel good in using it ">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="data" alignment="TOP_LEFT" layoutX="26.0" layoutY="124.0" prefHeight="293.0" prefWidth="289.0" text="Your data">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Baskerville Old Face" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

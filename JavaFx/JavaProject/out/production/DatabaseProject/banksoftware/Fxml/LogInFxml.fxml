@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banksoftware.Controller.LogInController">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="340.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="name" layoutX="95.0" layoutY="142.0" promptText="User name" style="-fx-background-color: transpqrent; -fx-border-width: 0 0 2 0; -fx-border-color: #0598ff;" />
+            <PasswordField fx:id="pin" layoutX="95.0" layoutY="204.0" promptText="Pin" style="-fx-background-color: transparent; -fx-border-width: 0 0 2 0; -fx-border-color: #0598ff;" />
+            <FontAwesomeIconView fill="#0598ff" glyphName="USER" layoutX="65.0" layoutY="164.0" size="20" />
+            <FontAwesomeIconView fill="#0598ff" glyphName="KEY" layoutX="62.0" layoutY="225.0" size="20" text="" />
+            <Button fx:id="login" layoutX="120.0" layoutY="258.0" mnemonicParsing="false" onAction="#goToOperations" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" />
+            <FontAwesomeIconView fill="#0598ff" glyphName="USERS" layoutX="137.0" layoutY="81.0" size="35" wrappingWidth="45.85714244842529" />
+            <Text fill="#0598ff" layoutX="108.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Button layoutX="287.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" size="18" />
+               </graphic>
+            </Button>
+            <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToSignIn" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0 0 1 0;" text="Don't have an account ? click here." textFill="#0598ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane maxWidth="307.0" prefHeight="400.0" prefWidth="280.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="BANK" layoutX="97.0" layoutY="135.0" size="75" />
+            <Text fill="WHITE" layoutX="62.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank Managment">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
