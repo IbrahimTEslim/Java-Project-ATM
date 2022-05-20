@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
@@ -30,11 +31,14 @@ public class BankSoftware extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../Fxml/LogInFxml.fxml"));
+
         Scene scene = new Scene(root);
 //        stage.initStyle(StageStyle.TRANSPARENT);
 //        scene.setFill(Color.TRANSPARENT);
         stage.setResizable(false);
         stage.setScene(scene);
+        stage.getIcons().add(new Image("file:icon.png"));
+
         stage.show();
 
     }

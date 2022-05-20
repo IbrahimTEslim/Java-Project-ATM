@@ -10,7 +10,36 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://E:/Java_Jars/EmailJar/javax.mail.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../ThirdPartyLibraries/Java_Jars/EmailJar/javax.mail.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="E:\ThirdPartyLibraries\Java_Jars\JDBCDriver">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../../ThirdPartyLibraries/Java_Jars/JDBCDriver" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../ThirdPartyLibraries/Java_Jars/JDBCDriver" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../../ThirdPartyLibraries/Java_Jars/FontAwesome" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../ThirdPartyLibraries/Java_Jars/FontAwesome" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../../ThirdPartyLibraries/Java_Jars/FontAwesome/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,44 +48,17 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="file://E:/Java_Jars/JDBCDriver" />
+          <root url="file://$MODULE_DIR$/../../../../../ThirdPartyLibraries/Java_Jars/JFoenix" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://E:/Java_Jars/JDBCDriver" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://E:/Java_Jars/FontAwesome/fontawesomefx-8.9.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://E:/Java_Jars/FontAwesome/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://E:/Java_Jars/JFoenix/jfoenix-8.0.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../ThirdPartyLibraries/Java_Jars/JFoenix" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
-          <root url="jar://E:/Java_Jars/JFoenix/jfoenix-9.0.10.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Java_Jars/JFoenix/jfoenix-9.0.10.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

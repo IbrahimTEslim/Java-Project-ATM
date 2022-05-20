@@ -7,20 +7,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../JDBCDriver" />
+          <root url="file://$MODULE_DIR$/../../../../ThirdPartyLibraries/Java_Jars/JDBCDriver" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/../JDBCDriver" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../ThirdPartyLibraries/Java_Jars/JDBCDriver" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Java_Jars/EmailJar/javax.mail.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../ThirdPartyLibraries/Java_Jars/EmailJar/javax.mail.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
